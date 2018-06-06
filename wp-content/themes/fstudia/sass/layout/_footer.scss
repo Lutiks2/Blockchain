@@ -1,0 +1,21 @@
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    .footer-block-copy {
+        padding-top: 8px;
+        font: 400 16px $text-font;
+        color: $lite-color;
+    }
+}
+
+@media all and (min-width: $sm) {
+    .footer-block-copy {
+        float: left;
+    }
+    .footer-social {
+        float: right;
+        .social-nav {
+            margin: 0;
+        }
+    }
+}

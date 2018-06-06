@@ -1,0 +1,63 @@
+.site-branding {
+    float: left;
+    img {
+        max-width: 176px;
+    }
+}
+
+.site-navigation {
+    float: right;
+}
+
+.menu-bat {
+    display: block;
+    padding-top: 28px;
+    font-size: 32px;
+    color: $main-color;
+    @media all and (min-width: $md) {
+        display: none;
+    }
+}
+
+.site-list {
+    display: none;
+    background: $main-color;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    right: 25px;
+    list-style: none;
+    padding-left: 0;
+    border-bottom: 3px solid $lite-color;
+    a{
+        display: block;
+        padding: 15px 80px;
+        text-align: center;
+        font: 18px $main-font;
+        color: $lite-color;
+        text-transform: uppercase;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    @media all and (min-width: $md) {
+        display: block;
+        margin: 35px 0;
+        position: inherit;
+        background: none;
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            a {
+                padding: 0 10px;
+                font: 400 20px $text-font;
+                color: $menu-color;
+                text-transform: none;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+
+    }
+}
